@@ -1,0 +1,29 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+/* STRUTTURA DEL MAIN */
+section {
+  padding: 100px;
+}
+.container {
+  max-width: 1000px;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/* COLONNE */
+.cl-30 {
+  width: 30%;
+  margin-bottom: 80px;
+  /* Debug */
+  min-height: 400px;
+  background-color: red;
+}
