@@ -4,7 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 img {
   max-width: 100%;
 }
@@ -23,7 +25,78 @@ section {
 .cl-30 {
   width: 30%;
   margin-bottom: 80px;
-  /* Debug */
-  min-height: 400px;
+}
+/* Testo all’interno delle colonne */
+.cl-30 p {
+  font-size: 0.8rem;
+}
+
+.cl-30 h2 {
+  font-size: 1rem;
+}
+/* STILI PREZZI */
+.price {
+  font-size: 1rem;
+  margin-right: 5px;
+}
+.sales {
+  color: red;
+}
+.full-price {
+  text-decoration: line-through;
+}
+/* CARD PRODOTTO
+   Contenitore dell’immagine con hover */
+.card {
+  position: relative;
+}
+/* Immagine principale */
+.img {
+  position: relative;
+  z-index: 1;
+}
+/* Immagine al passaggio del mouse */
+.img-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+/* Effetto hover: mostra l’immagine alternativa */
+.card:hover .img-hover {
+  opacity: 1;
+}
+.card:hover .img {
+  opacity: 0;
+  cursor: pointer;
+}
+/* BADGE SCONTO (-50%)*/
+
+.discount {
+  position: absolute;
+  bottom: 30px;
+  z-index: 3;
   background-color: red;
+  padding: 2px;
+}
+/* ALTRO BADGE 
+   Accanto al badge sconto */
+.text {
+  position: absolute;
+  bottom: 30px;
+  left: 43px;
+  z-index: 3;
+  background-color: green;
+  padding: 2px;
+  color: white;
+}
+.Sweater {
+  left: 0px;
+}
+/* Cuore inaltro a destra */
+.heart {
+  position: absolute;
+  z-index: 3;
+  bottom: 402px;
+  left: 270px;
 }
