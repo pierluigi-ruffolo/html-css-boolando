@@ -142,6 +142,27 @@ section {
 .heart {
   position: absolute;
   z-index: 3;
-  bottom: 402px;
-  left: 270px;
+  top: 10px;
+  right: 10px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+footer {
+  background-color: rgba(26, 26, 26);
+  padding: 30px;
+  color: white;
+  height: 100%;
+}
+.container-footer {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.text-footer h2 {
+  margin-bottom: 10px;
+}
+.social p {
+  margin-bottom: 10px;
 }
